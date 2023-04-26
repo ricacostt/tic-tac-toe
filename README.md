@@ -10,10 +10,11 @@ This is a simple implementation of the classic game Tic-Tac-Toe using Python. Th
 ## Features
 - The game keeps track of which player's turn it is.
 - It prevents players from overlapping on a tile already taken.
-- The game ends when a player wins or when it's a tie.
+- The game ends when a player wins or it's a tie.
 - Currently, you cannot choose your player and you cannot see who wins. These features may be added in the future.
 
 ## Run Locally
 1. Clone the repo into your local machine
-2. Run the `tic_tac_toe.py` file in your Python environment
-3. Have fun:)
+2. Run the `tic_tac_toe.py` file in your Python environment to play the classic 3x3 game
+3. Run the `tic_tac_tow_2.0.py` file in your Python environment to play with a customizable board size grid: just add it as the argument of the function (last line) ex: `play_game(5)` will give you a 5x5 board.
+4. Have fun:)
