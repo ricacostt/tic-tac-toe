@@ -17,8 +17,7 @@ def format_board(board):
 
 
 def make_move(board, row, column, player):
-    if board[row][column] == '.':
-        board[row][column] = player
+    board[row][column] = player
     return board
 
 # get_cells extracts three cells from the board - get the values of the coordinates
