@@ -4,8 +4,9 @@
 This is a simple implementation of the classic game Tic-Tac-Toe using Python. The game is played on the command line interface.
 
 ## How to Play
-1. Player X starts the game
-2. Enter a row and a column for your move
+1. Players take turns placing their symbols on a grid. The game is won by getting three symbols in a row horizontally, vertically, or diagonally
+2. Player X starts the game
+3. Enter a row and a column for your move
 
 ## Features
 - The game keeps track of which player's turn it is.
