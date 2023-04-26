@@ -36,6 +36,8 @@ def is_group_complete(board, coord_1, coord_2, coord_3):
     # return true if there's not a dot in cells
     return "." not in cells
 
+
+
 # check if there is a winner - all grops have the same player sign
 def are_all_cells_the_same(board, coord_1, coord_2, coord_3):
     cells = get_cells(board, coord_1, coord_2, coord_3)
@@ -66,7 +68,12 @@ def game_over(board):
             # check if there is a winning, if all cells are the same
             if are_all_cells_the_same(board, combination[0], combination[1], combination[2]):
                 return True
-    return False
+    #if there are no empty cells end the game
+    for row in board:
+        if '.' in row:
+            return False
+    print("it's a tie!")
+    return True
 
 def play_game():
     board = starter_board
