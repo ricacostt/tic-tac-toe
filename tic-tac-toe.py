@@ -76,6 +76,9 @@ def play_game():
         print("It's " + player + "'s turn.")
         row = int(input("Enter a row: "))
         column = int(input("Enter a column: "))
+        if not is_move_valid(board, row, column):
+            print('ah-ah, this cell is already taken, try again')
+            continue
         board = make_move(board, row, column, player)
         if player == 'X':
             player = 'O'
@@ -84,7 +87,9 @@ def play_game():
     print(format_board(board))
     print("Game over!")
 
-
+def is_move_valid(board, row, column):
+    #if board[row][column] == '.' return True
+    return board[row][column] == '.'
 
 #try now!
 print("Game time!")
